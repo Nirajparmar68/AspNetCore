@@ -130,7 +130,7 @@ namespace Microsoft.AspNetCore.Mvc.Formatters
             // Arrange
             var formatter = GetInputFormatter();
 
-            var content = "{\"Name\": \"Person Name\", \"Age\": 30}";
+            var content = "{\"name\": \"Person Name\", \"age\": 30}";
             var contentBytes = Encoding.UTF8.GetBytes(content);
             var httpContext = GetHttpContext(contentBytes);
 

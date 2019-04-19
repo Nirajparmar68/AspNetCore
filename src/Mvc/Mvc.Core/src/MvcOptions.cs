@@ -338,10 +338,6 @@ namespace Microsoft.AspNetCore.Mvc
 
             // Use camel casing for properties
             PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-
-            // Ignore casing when serializing values. Setting this to true keeps parity with Json.NET's
-            // behavior.
-            PropertyNameCaseInsensitive = true,
         };
 
         IEnumerator<ICompatibilitySwitch> IEnumerable<ICompatibilitySwitch>.GetEnumerator() => _switches.GetEnumerator();
